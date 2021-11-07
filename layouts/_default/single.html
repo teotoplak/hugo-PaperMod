@@ -43,7 +43,7 @@
       {{- end }}
     </ul>
     {{- end }}
-    {{- if (.Param "ShowPostNavLinks") }}
+    {{- if (.Site.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}
     {{- end }}
     {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
